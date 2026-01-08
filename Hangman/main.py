@@ -1,8 +1,8 @@
-import random
-import words
+import words as w
+from random import*
 
-word_list = words.word_list
-chosen_word = random.choice(word_list)
+word_list = w.word_list
+chosen_word = choice(word_list)
 word_length = len(chosen_word)
 
 end_of_game = False
@@ -43,3 +43,4 @@ while not end_of_game:
     from art import stages
 
     print(stages[lives])
+
